@@ -1,4 +1,4 @@
-package com.example.libraryservice;
+package src.main.java.com.example.libraryservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class LibraryService {
 
     public static void main(String[] args) {
-        SpringApplication.run(com.example.libraryservice.LibraryService.class, args);
+        SpringApplication.run(src.main.java.com.example.libraryservice.LibraryService.class, args);
     }
 
 }

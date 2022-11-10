@@ -1,4 +1,4 @@
-package com.example.libraryservice.entity;
+package src.main.java.com.example.libraryservice.entity;
 
 import lombok.Data;
 

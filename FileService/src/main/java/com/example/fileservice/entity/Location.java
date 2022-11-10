@@ -1,4 +1,4 @@
-package com.example.fileservice.entity;
+package src.main.java.com.example.fileservice.entity;
 
 import lombok.Data;
 

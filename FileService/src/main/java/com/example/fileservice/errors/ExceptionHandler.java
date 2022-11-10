@@ -1,4 +1,4 @@
-package com.example.fileservice.errors;
+package src.main.java.com.example.fileservice.errors;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ public class ExceptionHandler {
         );
     }
 
-    @org.springframework.web.bind.annotation.ExceptionHandler(ParameterException.class)
+    @org.springframework.web.bind.annotation.ExceptionHandler(src.main.java.com.example.fileservice.errors.ParameterException.class)
     public ResponseEntity<ErrorResponse> handleParameterExceptions(
             Exception e
     ) {

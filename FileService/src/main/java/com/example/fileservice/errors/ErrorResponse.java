@@ -1,4 +1,4 @@
-package com.example.fileservice.errors;
+package src.main.java.com.example.fileservice.errors;
 
 import lombok.Getter;
 import lombok.Setter;

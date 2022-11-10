@@ -1,4 +1,4 @@
-package com.example.libraryservice.controller;
+package src.main.java.com.example.libraryservice.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.List;
 
-import com.example.libraryservice.service.FolderService;
-import com.example.libraryservice.entity.Folder;
+import src.main.java.com.example.libraryservice.service.FolderService;
+import src.main.java.com.example.libraryservice.entity.Folder;
 
 @RestController
 @RequestMapping("/folders")

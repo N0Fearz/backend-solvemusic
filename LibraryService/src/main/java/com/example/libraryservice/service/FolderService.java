@@ -1,11 +1,11 @@
-package com.example.libraryservice.service;
+package src.main.java.com.example.libraryservice.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.example.libraryservice.entity.Folder;
+import src.main.java.com.example.libraryservice.entity.Folder;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.libraryservice.repository.FolderRepository;
+import src.main.java.com.example.libraryservice.repository.FolderRepository;
 import org.springframework.stereotype.Service;
 
 @Service

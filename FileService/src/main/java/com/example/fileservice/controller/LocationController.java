@@ -1,10 +1,10 @@
-package com.example.fileservice.controller;
+package src.main.java.com.example.fileservice.controller;
 
 import javax.validation.Valid;
 
-import com.example.fileservice.entity.Location;
-import com.example.fileservice.errors.LocationNotFoundException;
-import com.example.fileservice.service.LocationService;
+import src.main.java.com.example.fileservice.entity.Location;
+import src.main.java.com.example.fileservice.errors.LocationNotFoundException;
+import src.main.java.com.example.fileservice.service.LocationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
