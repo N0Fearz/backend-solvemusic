@@ -1,4 +1,4 @@
-package src.main.java.com.example.fileservice.errors;
+package com.example.fileservice.errors;
 
 public class LocationNotFoundException extends RuntimeException {
     public LocationNotFoundException() {

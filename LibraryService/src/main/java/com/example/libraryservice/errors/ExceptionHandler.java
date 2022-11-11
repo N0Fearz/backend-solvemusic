@@ -1,4 +1,4 @@
-package com.example.fileservice.errors;
+package com.example.libraryservice.errors;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 
 @ControllerAdvice
 public class ExceptionHandler {
-    @org.springframework.web.bind.annotation.ExceptionHandler(LocationNotFoundException.class)
+    @org.springframework.web.bind.annotation.ExceptionHandler(FolderNotFoundException.class)
     public ResponseEntity<ErrorResponse> handleNullException(Exception e){
         HttpStatus status = HttpStatus.NOT_FOUND;
 
@@ -19,7 +19,7 @@ public class ExceptionHandler {
         );
     }
 
-    @org.springframework.web.bind.annotation.ExceptionHandler(com.example.fileservice.errors.ParameterException.class)
+    @org.springframework.web.bind.annotation.ExceptionHandler(ParameterException.class)
     public ResponseEntity<ErrorResponse> handleParameterExceptions(
             Exception e
     ) {

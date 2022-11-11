@@ -1,6 +1,7 @@
-package src.main.java.com.example.libraryservice.entity;
+package com.example.libraryservice.entity;
 
 import lombok.Data;
+import com.example.libraryservice.model.FolderRequestModel;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +16,14 @@ public class Folder {
     private Long folderId;
     private String folderName;
     private String folderPath;
+public Folder(){
+    super();
+}
 
+public Folder(FolderRequestModel folderRequestModel){
+    this.folderName = folderRequestModel.getFolderName();
+    this.folderPath = folderRequestModel.getFolderPath();
+}
     public Long getFolderId() {
         return folderId;
     }

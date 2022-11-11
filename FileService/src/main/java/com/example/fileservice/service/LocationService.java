@@ -1,7 +1,7 @@
-package src.main.java.com.example.fileservice.service;
+package com.example.fileservice.service;
 
-import src.main.java.com.example.fileservice.entity.Location;
-import src.main.java.com.example.fileservice.repository.LocationRepository;
+import com.example.fileservice.entity.Location;
+import com.example.fileservice.repository.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

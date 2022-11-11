@@ -1,7 +1,7 @@
-package src.main.java.com.example.libraryservice.repository;
+package com.example.libraryservice.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import src.main.java.com.example.libraryservice.entity.Folder;
+import com.example.libraryservice.entity.Folder;
 import org.springframework.stereotype.Repository;
 
 @Repository

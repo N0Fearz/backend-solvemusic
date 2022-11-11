@@ -1,6 +1,7 @@
-package src.main.java.com.example.fileservice.entity;
+package com.example.fileservice.entity;
 
 import lombok.Data;
+import com.example.fileservice.model.LocationRequestModel;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,6 +18,14 @@ public class Location {
     private String locationSource;
     private String locationDestination;
 
+    public Location(){
+        super();
+    }
+    public Location(LocationRequestModel locationRequestModel){
+        this.locationName = locationRequestModel.getLocationName();
+        this.locationSource = locationRequestModel.getLocationSource();
+        this.locationDestination = locationRequestModel.getLocationDestination();
+    }
     public Long getLocationId(){ return locationId; }
 
     public String getLocationName(){ return locationName; }

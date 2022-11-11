@@ -1,4 +1,4 @@
-package com.example.fileservice.errors;
+package com.example.libraryservice.errors;
 
 import lombok.Getter;
 import lombok.Setter;
