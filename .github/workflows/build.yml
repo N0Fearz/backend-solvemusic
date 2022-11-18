@@ -1,8 +1,8 @@
 name: Build
 on:
   push:
-    branches:
-      - master # or the name of your main branch
+    paths:
+      - 'FileService/**'
 
 jobs:
   build:
