@@ -36,6 +36,7 @@ public class MoveService {
         List<Path> result;
         try (Stream<Path> walk = Files.list(path)) {
             result = walk.filter(Files::isDirectory)
+//                    .filter(p -> p.getFileName().toString().endsWith(extension))
                     .collect(Collectors.toList());
         }
     }
