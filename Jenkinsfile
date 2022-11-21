@@ -2,6 +2,7 @@ pipeline {
   agent none
 tools { 
   maven 'Maven 3.8'
+  jdk 'Java17'
 }
   stages {
     stage("build & SonarQube analysis") {
