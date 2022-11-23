@@ -13,13 +13,12 @@ tools {
         }
       }
     }
-    stage("SonarQube status gate"){
-      timeout(time: 5, unit: 'MINUTES') {
-        def qualitygate = waitForQualityGate()
-        if (qualitygate.status != "OK") {
-        error "Pipeline aborted due to quality gate coverage failure."
-        }
-      }
-    }
+    stage("Quality Gate") {
+      steps {
+       timeout(time: 1, unit: 'HOURS') {
+            waitForQualityGate abortPipeline: true
+         }
+       }
+     }
   }
 }
