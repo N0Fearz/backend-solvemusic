@@ -21,15 +21,13 @@ public class MoveController {
     @GetMapping("/get/directories")
     public List<Path> getDirectories() throws IOException {
         Path path = Paths.get("C:\\Users\\casgo\\Documents\\School\\semester 3\\Individual\\ProjectTest");
-        List<Path> paths = moveService.listDirectories(path);
-        return paths;
+        return moveService.listDirectories(path);
     }
 
     @GetMapping("/get/files")
     public List<Path> getFiles() throws IOException {
         Path path = Paths.get("C:\\Users\\casgo\\Documents\\School\\semester 3\\Individual\\ProjectTest");
-        List<Path> paths = moveService.hasMP3(path, ".mp3");
-        return paths;
+        return moveService.hasMP3(path, ".mp3");
     }
 
 }
