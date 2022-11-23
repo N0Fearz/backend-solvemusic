@@ -84,4 +84,9 @@
         </plugins>
     </build>
 
+    <modules>
+        <module>FileService</module>
+        <module>LibraryService</module>
+    </modules>
+
 </project>
