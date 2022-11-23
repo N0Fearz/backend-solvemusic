@@ -13,7 +13,7 @@ import com.example.libraryservice.entity.Folder;
 
 @RestController
 @RequestMapping("/folders")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "localhost:3000")
 public class FolderController {
     @Autowired
     private FolderService folderService;
